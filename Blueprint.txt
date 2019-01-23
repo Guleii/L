@@ -1,0 +1,15 @@
+蓝图
+将一个大型应用分解成多个小模块或子应用
+修改整体项目结构：
+├── app.py            -- 启动程序
+├── book              -- book 模块
+│   ├── __init__.py
+│   └── book.py
+├── movie             -- movie 模块
+│   ├── __init__.py
+│   └── movie.py
+└── templates         -- 模板
+    ├── 404.html
+    ├── book.html
+    ├── layout.html
+    └── movie.html
