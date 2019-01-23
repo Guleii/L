@@ -15,4 +15,4 @@ def func_test():
     pass
 
 在函数func_test被调用时，会提前调用decorate_test对func_test进行装饰，返回一个装饰后的函数
-即：wrapper
+即：wrapper.
