@@ -1,0 +1,10 @@
+flash消息闪现
+通过flash('message',message/error)进行消息闪现
+但是需要在模板中获取
+get_flashed_messages()
+
+例如
+
+{% for message in get_flashed_messages() %}
+    {{ message }}
+{% endfor %}
