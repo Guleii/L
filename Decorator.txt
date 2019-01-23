@@ -2,3 +2,17 @@
 python中可以将函数当作参数传递、使用，也就是说函数是一个对象。
 装饰器可以使得我们在使用函数的时候不改变原本的函数实现代码，但是可以增强函数的功能。
 即：修改装饰原有的def
+起作用的方式：
+写在被装饰的函数之前，例：
+
+def decorate_test(func)
+    def wrapper():
+        return <h> + func + </h>
+    return wrapper
+    
+@decorate_test
+def func_test():
+    pass
+
+在函数func_test被调用时，会提前调用decorate_test对func_test进行装饰，返回一个装饰后的函数
+即：wrapper
