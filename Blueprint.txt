@@ -13,3 +13,12 @@
     ├── book.html
     ├── layout.html
     └── movie.html
+    
+在蓝图中使用路由：
+# book_bp 蓝图对象
+@book_bp.route(/book/<name>)
+
+需要在app.py中进行注册才能使用:
+app.register_blueprint(book_bp)
+
+可以给蓝图中的所有路由定义一个 URL 前缀
